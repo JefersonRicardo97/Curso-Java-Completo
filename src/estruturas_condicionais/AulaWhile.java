@@ -2,7 +2,7 @@ package estruturas_condicionais;
 
 import java.util.Scanner;
 
-public class PraticandoWhile {
+public class AulaWhile {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
