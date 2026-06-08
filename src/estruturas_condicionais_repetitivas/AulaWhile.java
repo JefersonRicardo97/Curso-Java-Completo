@@ -1,4 +1,4 @@
-package estruturas_condicionais;
+package estruturas_condicionais_repetitivas;
 
 import java.util.Scanner;
 
