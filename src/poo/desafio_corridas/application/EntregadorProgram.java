@@ -4,7 +4,6 @@ import poo.desafio_corridas.entities.Entregador;
 
 import java.util.Locale;
 import java.util.Scanner;
-//Atualizando
 public class EntregadorProgram {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
