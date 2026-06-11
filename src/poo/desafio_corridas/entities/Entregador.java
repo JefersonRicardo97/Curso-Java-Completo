@@ -15,16 +15,25 @@ public class Entregador {
         return valorArrecadado;
     }
 
-    public double calcularMetaDiaria(double metaDiaria) {
-        metaDiaria -= valorArrecadado;
-        return metaDiaria;
+    public double calcularMetaDiaria() {
+        return metaDiaria - valorArrecadado;
     }
 
     public String toString() {
-        return "Seu nome: "
-                + nome
-                + ", Falta para Sua Meta Diária:"
-                + String.format("%.2f", metaDiaria - valorArrecadado);
-    }
+        double quantoFalta = calcularMetaDiaria();
 
+        if (quantoFalta <= 0) {
+            return "Seu nome: "
+                    + nome
+                    + ", Meta Diária Batida:"
+                    + String.format("%.2f", valorArrecadado);
+        } else {
+            return "Seu nome: "
+                    + nome
+                    + ", Falta para Sua Meta Diária :"
+                    + String.format("%.2f", quantoFalta);
+
+        }
+    }
 }
+
