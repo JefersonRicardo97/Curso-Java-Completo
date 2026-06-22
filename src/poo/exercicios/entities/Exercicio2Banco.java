@@ -40,12 +40,12 @@ public class Exercicio2Banco {
     }
 
 
-    public double depositoSaldo(double deposito) {
-        return saldo += deposito;
+    public void depositoSaldo(double deposito) {
+        saldo += deposito;
     }
 
-    public double saqueSaldo(double saque) {
-        return saldo = (saldo - saque) - taxa;
+    public void saqueSaldo(double saque) {
+        saldo -=saque + taxa;
 
     }
 

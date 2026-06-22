@@ -21,7 +21,7 @@ public class Exercicio2BancoProgram {
             System.out.println("Digite o saldo Inicial");
             double saldoInicial = sc.nextDouble();
             usuario = new Exercicio2Banco(numConta, nome, saldoInicial);
-        } else {
+        } else  {
             usuario = new Exercicio2Banco(numConta, nome);
         }
 
